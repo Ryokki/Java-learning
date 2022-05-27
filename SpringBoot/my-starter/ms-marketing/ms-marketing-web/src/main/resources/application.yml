@@ -1,0 +1,23 @@
+server:
+  port: 12080
+  servlet:
+    context-path: /
+    session:
+      timeout: 60
+spring:
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+  profiles:
+    active: dev
+  application:
+    name: ms-marketing
+
+feign:
+  circuitbreaker:
+    enabled: true
+
+cnmemset:
+  ms-user:
+    url: 127.0.0.1:9926

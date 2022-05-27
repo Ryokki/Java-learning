@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-user-spring-boot-starter" />
+        <module name="ms-user-autoconfigure" />
+        <module name="ms-user-web" />
+        <module name="ms-user-api" />
+        <module name="ms-marketing-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ms-marketing" target="8" />
+      <module name="ms-marketing-web" target="8" />
+      <module name="ms-user" target="8" />
+      <module name="ms-user-api" target="8" />
+      <module name="ms-user-autoconfigure" target="8" />
+      <module name="ms-user-spring-boot-starter" target="8" />
+      <module name="ms-user-web" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ms-marketing-web" options="-parameters" />
+      <module name="ms-user-api" options="-parameters" />
+      <module name="ms-user-autoconfigure" options="-parameters" />
+      <module name="ms-user-spring-boot-starter" options="-parameters" />
+      <module name="ms-user-web" options="-parameters" />
+    </option>
+  </component>
+</project>
